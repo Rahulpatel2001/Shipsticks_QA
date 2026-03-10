@@ -1,1 +1,3 @@
 # Shipsticks_QA
+The Playwright test automates the Step 1 happy path from the booking widget: it opens the ShipSticks staging homepage, verifies the origin/destination comboboxes and the Get started button are present, selects One way, fills the exact origin and destination addresses from the prompt, and clicks Get started using role‑based locators for stability. In the current staging environment, clicking Get started does not consistently navigate to a visible Step 1 screen or address summary, so I limited assertions to the homepage widget and left the stronger Step 1 checks (URL contains /step-1, Step 1 indicator, origin/destination, Ground, and ability to continue) described here for a stable environment.
+
